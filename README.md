@@ -19,18 +19,18 @@
 * <b>Dataset Download link</b> : https://s3-ap-southeast-1.amazonaws.com/he-public-data/DL%23+Beginner.zip
 
 ## Setup
-* From <b>training on the dataset provided</b> in the Details section, directly run [inpainting-notebook](https://github.com/chefpr7/Image-Inpainting-using-Partial-Convolutional-Layers/blob/master/inpainting_notebook.ipynb)
+* From <b>training on the dataset provided</b> in the Details section, directly run [inpainting-notebook](https://github.com/YB221/Image-Inpainting-using-Partial-Convolutional-Layers/blob/master/inpainting_notebook.ipynb)
 * For <b>training on your own dataset</b>, use the same architecture with a dataset of your own.
 
 
 ## Implementation Details
 * The first task required creating <b>masks</b> for the images.
-  Used OpenCV to make a [random mask generator](https://github.com/chefpr7/Image-Inpainting-using-Partial-Convolutional-Layers/blob/master/image%20masker/image_maskgenerator.py).</br>
+  Used OpenCV to make a [random mask generator](https://github.com/YB221/Image-Inpainting-using-Partial-Convolutional-Layers/blob/master/image%20masker/image_maskgenerator.py).</br>
   Here are a few results of the random masks:</br>
-  <img src='https://github.com/chefpr7/Image-Inpainting-using-Partial-Convolutional-Layers/blob/master/data/download%20(1).png' />
+  <img src='https://github.com/YB221/Image-Inpainting-using-Partial-Convolutional-Layers/blob/master/data/download%20(1).png' />
 </br>
 * <h3>Architecture Used : UNET</h3> 
-  <img src='https://github.com/chefpr7/Image-Inpainting-using-Partial-Convolutional-Layers/blob/master/data/unet-architecture.png' />
+  <img src='https://github.com/YB221/Image-Inpainting-using-Partial-Convolutional-Layers/blob/master/data/unet-architecture.png' />
   
 ## Partial Convolutional Layer: 
 * As cited in the paper </br>
@@ -42,7 +42,7 @@ corresponding binary mask. The partial convolution at every location, is express
 
 
 ## Visualizing Results :
-* <img src = 'https://github.com/chefpr7/Image-Inpainting-using-Partial-Convolutional-Layers/blob/master/data/download.png' />
+* <img src = 'https://github.com/YB221/Image-Inpainting-using-Partial-Convolutional-Layers/blob/master/data/download.png' />
 * Left to right : Maksed Image, Predicted Image , Original Image
 * Training takes a lot of time and an average epoch through the entire dataset takes about 3 hrs.
 
